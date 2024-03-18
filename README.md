@@ -1,1 +1,5 @@
-# CodeGenerator
+. İki kural belirledim birinci kuralım şu; Eğer kod içerisinde rakam yoksa kod geçersizdir. İlk rakamın indisini alıyorum, daha sonra kod içerisinde o indisteki değerin mod 8 ini alıyorum, daha sonra çıkan değeri alıp harfler tablosundan çıkan değer kadar geriye gelerek harfi alıyorum bu harfin ilk rakam indisinden gelen değerin mod 8 ini aldığım alandaki değer ile aynı olup olmadığını kontrol ediyorum aynı ise 1. kuralım geçerli demektir.
+
+. İkinci kuralım da iki aşamalı düşündüm ; 
+ilk aşamada ilk bulduğu tek asci koda sahip değeri alıyorum, daha sonra mod 8 ini alıyorum sonra çıkan değer benim hedef indisim olmuş oluyor bu hedef indisteki değerinde asci karşılığının tek olmasını bekliyorum eğer bu şart sağlanırsa ikinci aşamaya geçiyorum.
+İkinci aşamada ise kodun sonundan başlayarak çift asci koda sahip değeri alıyorum daha sonra mod 8 ini alıyorum sonra çıkan değer benim hedef indisim olmuş oluyor bu hedef indisteki değerinde asci karşılığının çift olmasını bekliyorum bu kural da sağlanırsa kod geçerli olarak dönüş sağlıyorum.
